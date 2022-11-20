@@ -1,0 +1,1 @@
+var titleTime,OriginTitile=document.title;document.addEventListener("visibilitychange",(function(){document.hidden?(document.title="👀人呢，赶紧回来！~",clearTimeout(titleTime)):(document.title="🐖回来了？这个家没有你的位置了！~～",titleTime=setTimeout((function(){document.title=OriginTitile}),2e3))}));
