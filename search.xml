@@ -2,6 +2,16 @@
 <search>
   <entry>
     <title>第一篇文章</title>
+    <url>/2022/11/20/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="这是第一篇文章"><a href="#这是第一篇文章" class="headerlink" title="这是第一篇文章"></a>这是第一篇文章</h2>]]></content>
+  </entry>
+  <entry>
+    <title>第一篇文章</title>
+    <url>/2022/11/20/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="这是第一篇文章"><a href="#这是第一篇文章" class="headerlink" title="这是第一篇文章"></a>这是第一篇文章</h2>]]></content>
+  </entry>
+  <entry>
+    <title>第一篇文章</title>
     <url>/2022/11/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h2 id="这是第一篇文章"><a href="#这是第一篇文章" class="headerlink" title="这是第一篇文章"></a>这是第一篇文章</h2>]]></content>
       <categories>
@@ -12,23 +22,8 @@
       </tags>
   </entry>
   <entry>
-    <title>第一篇文章</title>
-    <url>/2022/11/20/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="这是第一篇文章"><a href="#这是第一篇文章" class="headerlink" title="这是第一篇文章"></a>这是第一篇文章</h2>]]></content>
-  </entry>
-  <entry>
-    <title>第一篇文章</title>
-    <url>/2022/11/20/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="这是第一篇文章"><a href="#这是第一篇文章" class="headerlink" title="这是第一篇文章"></a>这是第一篇文章</h2>]]></content>
-  </entry>
-  <entry>
     <title>关于我</title>
     <url>/about/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>categories</title>
-    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -46,7 +41,7 @@
 #footer::before {
     background: transparent !important;
 }
-#page-header::before {
+#page-header {
     background: transparent !important;
 }
 
@@ -149,6 +144,36 @@
 ]]></content>
   </entry>
   <entry>
+    <title>categories</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/css/universe.css</url>
+    <content><![CDATA[/* 背景宇宙星光  */
+#universe{
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */
+    z-index: -1;
+}]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/js/title.js</url>
+    <content><![CDATA[var titleTime,OriginTitile=document.title;document.addEventListener("visibilitychange",(function(){document.hidden?(document.title="👀人呢，赶紧回来！~",clearTimeout(titleTime)):(document.title="🐖回来了？这个家没有你的位置了！~～",titleTime=setTimeout((function(){document.title=OriginTitile}),2e3))}));]]></content>
+  </entry>
+  <entry>
     <title></title>
     <url>/js/light.js</url>
     <content><![CDATA[// 霓虹灯效果
@@ -208,34 +233,9 @@ window.onload = setInterval(changeColor, 1200);]]></content>
 dark()]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/js/title.js</url>
-    <content><![CDATA[var titleTime,OriginTitile=document.title;document.addEventListener("visibilitychange",(function(){document.hidden?(document.title="👀人呢，赶紧回来！~",clearTimeout(titleTime)):(document.title="🐖回来了？这个家没有你的位置了！~～",titleTime=setTimeout((function(){document.title=OriginTitile}),2e3))}));]]></content>
-  </entry>
-  <entry>
     <title>电影</title>
     <url>/movie/index.html</url>
     <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/css/universe.css</url>
-    <content><![CDATA[/* 背景宇宙星光  */
-#universe{
-    display: block;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */
-    z-index: -1;
-}]]></content>
   </entry>
   <entry>
     <title>link</title>
